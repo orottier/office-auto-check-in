@@ -34,5 +34,7 @@ function checkUser {
 }
 
 while read line; do
-	checkUser $line
+	if [ -n "${line}" ]; then
+		checkUser $line
+	fi
 done < users.list
