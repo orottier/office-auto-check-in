@@ -13,7 +13,7 @@ wget --quiet -O- $usersEndpoint | jq '.[] | select(.atOffice) | .slack' | sed 's
 
 function slack {
 	escapedText=$(echo $1 | sed 's/"/\"/g' | sed "s/'/\'/g" | sed 's/+/%2b/g' )
-	json="{\"channel\": \"@$2\", \"text\": \"$escapedText\", \"username\": \"AMSBot\", \"icon_emoji\": \":tnw-2:\"}"
+	json="{\"channel\": \"@$2\", \"text\": \"$escapedText\", \"username\": \"$slackName\", \"icon_emoji\": \"$slackIcon\"}"
 	curl -s -d "payload=$json" $slackEndpoint
 }
 
