@@ -1,4 +1,6 @@
-Scan the local network and check in whoever is there
+## Scan the local network and check in whoever is there
+
+![See it in action](https://pbs.twimg.com/media/CkhPSDLW0AABzVu.jpg)
 
 You'll need
  - a machine connected to the local office network to run this
