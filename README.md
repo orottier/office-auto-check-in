@@ -16,7 +16,7 @@ Setup by copying and modifying
 Put in your crontab
 ```
 */5 * * * * cd /path/to/directory; ./scan-office.sh
-0   3 * * * rm -f /path/to/pinged.out
+0   3 * * * rm -f /path/to/directory/pinged.out
 ```
 
 Enjoy!
