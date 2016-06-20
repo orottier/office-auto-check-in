@@ -19,7 +19,7 @@ function slack {
 
 function checkUser {
 	echo Checking $1 for $2
-	if grep -q "$1" nmap.out; then
+	if grep -iq "$1" nmap.out; then
 		echo $2 " is in the office"
 		if ! grep -iq "^$2$" checked-in.out; then
 			echo $2 " is not checked in"
